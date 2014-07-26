@@ -1,5 +1,11 @@
 class Speaker
-  attr_accessor :name, :bio, :photo_url
+  attr_reader :name, :bio, :photo_url
+
+  def initialize(name, bio, photo_url)
+    @name      = name
+    @bio       = bio
+    @photo_url = photo_url
+  end
 end
 
 class WrocLoveRb
